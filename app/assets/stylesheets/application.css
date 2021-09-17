@@ -34,22 +34,58 @@
   src: url('Miso-YoMa.ttf')
  }
 
- h1, h2, h3, h4, h5, h6{
-  margin-top:100px;
-  margin-bottom:100px;
-}
+ @font-face {
+  font-family: 'LemonMilk';
+  src: url('LemonMilkMedium-mLZYV.otf')
+ }
 
 .nav-item {
   font-family: 'Halfbred';
-  font-size: 1.4em !important;
+  font-size: 1.2em !important;
 }
 
 .nav-item-title {
   font-family: 'BallpointSignature';
-  font-size: 2.6em !important;
+  font-size: 2.4em !important;
 }
 
 body {
-  background-color: rgba(201, 201, 201, 0.473);
+  background-color: rgba(201, 201, 201, 0.28);
   padding: 10px;
+}
+
+h2 {
+  font-family: 'LemonMilk';
+  font-size: 3.5em !important;
+  margin-left: 50px;
+  margin-bottom: 80px;
+  color: rgba(41, 41, 41, 0.692);
+  text-shadow: 2.5px 2.5px #ffffff;
+}
+
+h3 {
+  font-family: 'LemonMilk';
+  font-size: 3.5em !important;
+  margin-left: 175px;
+  color: rgba(14, 14, 14, 0.692);
+}
+
+h6 {
+  font-family: 'Miso';
+  font-size: 1.5em !important;
+  margin-left: 300px;
+  color: rgb(0, 0, 0);
+}
+
+.capital {
+  font-family: 'Bulgatti';
+  font-size: 1.8em !important;
+  text-shadow: 2.5px 2.5px #00596479;
+}
+
+.name {
+  font-family: 'Bulgatti';
+  font-size: 1.6em !important;
+  text-shadow: 2.5px 2.5px #00596479;
+  text-decoration: underline;
 }
