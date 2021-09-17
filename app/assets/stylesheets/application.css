@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+  font-family: 'BallpointSignature';
+  src: url('BallpointSignature-L3J9W.ttf')
+ }
+
+ @font-face {
+  font-family: 'Bulgatti';
+  src: url('Bulgatti-xgMV.ttf')
+ }
+
+ @font-face {
+  font-family: 'Halfbred';
+  src: url('Halfbred-jEEq0.ttf')
+ }
+
+ @font-face {
+  font-family: 'Miso';
+  src: url('Miso-YoMa.ttf')
+ }
+
+ h1, h2, h3, h4, h5, h6{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+.nav-item {
+  font-family: 'Halfbred';
+  font-size: 1.4em !important;
+}
+
+.nav-item-title {
+  font-family: 'BallpointSignature';
+  font-size: 2.6em !important;
+}
+
+body {
+  background-color: rgba(201, 201, 201, 0.473);
+  padding: 10px;
+}
