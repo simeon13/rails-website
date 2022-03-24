@@ -1,0 +1,32 @@
+<%= form_for @contact, url: home_index_path do |f| %>
+  <div class="contact">
+    <div class="row">
+      <div class="col">
+        <%= f.label :name, class: "contact-form-label"%></br>
+        <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: "  Enter your name..." %></br>
+      </div>
+      <div class="col">
+        <%= f.label :email, class: "contact-form-label" %></br>
+        <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "  Enter your email..."  %></br>
+      </div>
+      <div class="col">
+        <%= f.label :subject, class: "contact-form-label" %></br>
+        <%= f.text_field :subject, required: true, class: "contact-form-text-area", placeholder: "  Enter your subject..."  %></br>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <%= f.label :message, class: "contact-form-label"%></br>
+        <%= f.text_area :message, rows: 8, required: true, class: "contact-form-text-area",
+              placeholder: "  Enter your message..."%></br>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <%= f.submit 'SUBMIT', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+<% end %>

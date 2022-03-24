@@ -13,79 +13,113 @@
  *= require_tree .
  *= require_self
  */
-
  @font-face {
-  font-family: 'BallpointSignature';
-  src: url('BallpointSignature-L3J9W.ttf')
+  font-family: 'Montserrat';
+  src: url('Montserrat-Medium.ttf')
  }
 
  @font-face {
-  font-family: 'Bulgatti';
-  src: url('Bulgatti-xgMV.ttf')
+  font-family: 'Montserrat Italic';
+  src: url('Montserrat-Italic.ttf')
  }
 
  @font-face {
-  font-family: 'Halfbred';
-  src: url('Halfbred-jEEq0.ttf')
+  font-family: 'Montserrat Regular';
+  src: url('Montserrat-Regular.ttf')
  }
+
 
  @font-face {
-  font-family: 'Miso';
-  src: url('Miso-YoMa.ttf')
+  font-family: 'SourceCode';
+  src: url('SourceCodePro-Light.ttf')
  }
 
- @font-face {
-  font-family: 'LemonMilk';
-  src: url('LemonMilkMedium-mLZYV.otf')
- }
 
-.nav-item {
-  font-family: 'Halfbred';
-  font-size: 1.2em !important;
+ .nav-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2em !important;
+  text-shadow: 1px 1.5px #ffffff;
 }
 
-.nav-item-title {
-  font-family: 'BallpointSignature';
-  font-size: 2.4em !important;
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: em !important;
+  letter-spacing: 0.1em;
+  text-shadow: 0.3px 0.3px #ffffff;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: rgba(187, 211, 197, 0.096);
+  border-bottom: 3px dotted #33333310;
+  position: fixed;
+  width: 100%; /* Full width */
 }
 
 body {
-  background-color: rgba(201, 201, 201, 0.28);
-  padding: 10px;
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.8em !important;
+  color: rgba(0, 0, 0, 0.842);
+  text-align: left;
 }
 
 h2 {
-  font-family: 'LemonMilk';
-  font-size: 3.5em !important;
-  margin-left: 50px;
-  margin-bottom: 80px;
-  color: rgba(41, 41, 41, 0.692);
-  text-shadow: 2.5px 2.5px #ffffff;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.3em !important;
+  color: rgba(0, 0, 0, 0.842);
+  text-align: left;
 }
 
 h3 {
-  font-family: 'LemonMilk';
-  font-size: 3.5em !important;
-  margin-left: 175px;
-  color: rgba(14, 14, 14, 0.692);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1em !important;
+  color: rgba(82, 82, 82, 0.842);
+  text-align: left;
 }
 
-h6 {
-  font-family: 'Miso';
-  font-size: 1.5em !important;
-  margin-left: 300px;
-  color: rgb(0, 0, 0);
+h4 {
+  font-family: 'Montserrat Italic', sans-serif;
+  font-size: 1.7em !important;
+  color: rgba(0, 0, 0, 0.842);
+  text-align: justify;
 }
 
-.capital {
-  font-family: 'Bulgatti';
-  font-size: 1.8em !important;
-  text-shadow: 2.5px 2.5px #00596479;
+.contact-form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em !important;
+  letter-spacing: 0.1em;
+  text-shadow: 0.3px 0.3px #ffffff;
+  text-transform: uppercase;
+  padding-left:5px;
 }
 
-.name {
-  font-family: 'Bulgatti';
-  font-size: 1.6em !important;
-  text-shadow: 2.5px 2.5px #00596479;
-  text-decoration: underline;
+.row {
+  padding-right:74px;
+  padding-left:74px;
+}
+
+.contact {
+  padding-right:300px;
+  padding-left:300px;
+}
+
+.contact-form-text-area {
+  width: 100%;
+  border: 2px solid rgba(207, 207, 207, 0.521);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(167, 167, 167);
+  opacity: 0.7; /* Firefox */
 }
